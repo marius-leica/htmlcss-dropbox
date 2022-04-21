@@ -38,6 +38,7 @@ body {
   --color-deep-blue: rgb(13, 36, 129);
   --uf-blue: rgb(0, 147, 206);
   --color-yellow: rgb(255, 216, 48);
+  --fa-li-margin: 26px;
 }
 
 .bg-green {
@@ -202,9 +203,9 @@ img {
   flex-basis: 40%;
 }
 
-/* ul li {
+ul li {
   list-style: none;
-} */
+}
 
 .gap-2 {
   --gap: 2rem;
