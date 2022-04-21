@@ -12,43 +12,45 @@
 
 <body>
     <header>
-        <nav class="d-flex">
-            <div>
-                <ul class="d-flex">
-                    <li class="logo">
-                        <a href="#">
-                            <img src="img/logo-small.png" alt="logo">
-                        </a>
-                    </li>
-                    <li>
-                        <a href="#">Perchè Dropbox</a>
-                    </li>
-                    <li>
-                        <a href="#">Funzioni</a>
-                    </li>
-                    <li>
-                        <a href="#">Piani e Prezi</a>
-                    </li>
-                </ul>
-            </div>
-            <div>
-                <ul class="d-flex">
-                    <li>
-                        <a href="#">Supporto</a>
-                    </li>
-                    <li>
-                        <a href="#">Contatta I'ufficio vendite</a>
-                    </li>
-                    <li>
-                        <a href="#">Accedi</a>
-                    </li>
-                    <li>
-                        <a class="blue-btn" href="#">Inizia</a>
-                    </li>
-                </ul>
+        <nav>
+            <div class="row wrap">
+                <div class="col">
+                    <a href="#">
+                        <img class="logo" src="img/logo-small.png" alt="logo">
+                    </a>
+                    <ul class="d-flex">
+                        <li>
+
+                        </li>
+                        <li>
+                            <a href="#">Perchè Dropbox</a>
+                        </li>
+                        <li>
+                            <a href="#">Funzioni</a>
+                        </li>
+                        <li>
+                            <a href="#">Piani e Prezi</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <ul class="d-flex">
+                        <li>
+                            <a href="#">Supporto</a>
+                        </li>
+                        <li>
+                            <a href="#">Contatta I'ufficio vendite</a>
+                        </li>
+                        <li>
+                            <a href="#">Accedi</a>
+                        </li>
+                        <li>
+                            <a class="blue-btn" href="#">Inizia</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </nav>
-
     </header>
     <main>
         <section class="jumbotron bg-blue">
@@ -56,8 +58,8 @@
                 <div class="jumbotron-content">
                     <h1 class="mb-30">Tutto ciò che ti serve per il
                         lavoro, in un unico posto</h1>
-                    <div class="d-flex">
-                        <div class="col">
+                    <div class="row">
+                        <div class="col col-small">
                             <div class="pb-30">
                                 <p>
                                     Finalmente tutti i tuoi strumenti, contenuti e collaboratori sono accesibili dallo
@@ -76,215 +78,241 @@
                                 <i class="fa-solid fa-arrow-down"></i>
                             </div>
                         </div>
-                        <div class="col-l">
-                            <img src="img/jumbo.png" alt="">
+                        <div class="col col-large">
+                            <div>
+                                <img src="img/jumbo.png" alt="">
+                            </div>
                         </div>
 
                     </div>
                 </div>
             </div>
         </section>
+
+
         <section class="py-60">
             <div class="container py-60">
-                <div>
-                    <h2 class="pb-50">Trova il piano busibess che fa per te</h2>
-                    <div class="pb-30">
-                        <input id="monthly" type="radio">
-                        <label for="monthly">Fatturazione mensile</label>
-                        <input id="monthly" type="radio">
-                        <label for="monthly">Fatturazione annuale</label>
-                    </div>
-                    <div>
-                        <div class="cards-cta d-flex">
-                            <div class="col cta-col">
-                                <div class="cta-header">
-                                    <i class="fa-solid fa-user"></i>
-                                    Singolo
-                                </div>
-                                <div class="cta-content">
-                                    <h3 class="cta-title">Professional</h3>
-                                    <div class="cta-price">€ 12.00</div>
-                                    <div class="cta-subtitle">/mese</div>
-                                    <ul class="cta-features">
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-user"></i>
-                                            1 utente
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-folder"></i>
-                                            5 TB di archiviazione di spazio sicuro
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-share-nodes"></i>
-                                            Funzioni di produttività premium e condivisione di file semplice e sicura
-                                        </li>
-                                    </ul>
-                                    <a class="blue-btn" href="#">Prova gratis per 30 giorni</a>
-                                    <div>
-                                        oppure <a href="#">acquista ora</a>
-                                    </div>
-                                    <hr>
-                                    <div class="cta-price">Punti salienti del piano</div>
-                                    <ul class="cta-features">
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Nessun limite di spazio per i file
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Cartella ofline su dispositivi mobili
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Risparmio del 50% rispetto alle iscrizioni singole
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Possibilità di inserire nuovi membri del team
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Gestione dei permessi in base ai ruoli
-                                        </li>
-                                        <ul></ul>
-                                </div>
+                <h2 class="pb-50">Trova il piano busibess che fa per te</h2>
+                <div class="pb-30">
+                    <input id="monthly" type="radio">
+                    <label for="monthly">Fatturazione mensile</label>
+                    <input id="monthly" type="radio">
+                    <label for="monthly">Fatturazione annuale</label>
+                </div>
+                <div class="row gap-2 mb-30">
+                    <div class="col col-3">
+                        <div class="cta-col">
+                            <div class=" cta-header">
+                                <i class="fa-solid fa-user"></i>
+                                Singolo
                             </div>
-                            <div class="col cta-col">
-                                <div class="cta-header">
-                                    <i class="fa-solid fa-users"></i>
-                                    Team
+                            <div class="cta-content">
+                                <h3 class="cta-title">Professional</h3>
+                                <div class="cta-price">€ 12.00</div>
+                                <div class="cta-subtitle">/mese</div>
+                                <ul class="cta-features">
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-user"></i>
+                                        1 utente
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-folder"></i>
+                                        5 TB di archiviazione di spazio sicuro
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        Funzioni di produttività premium e condivisione di file semplice e
+                                        sicura
+                                    </li>
+                                </ul>
+                                <a class="blue-btn" href="#">Prova gratis per 30 giorni</a>
+                                <div>
+                                    oppure <a href="#">acquista ora</a>
                                 </div>
-                                <div class="cta-content">
-                                    <h3 class="cta-title">Advanced</h3>
-                                    <div class="cta-price">€ 18.00</div>
-                                    <div class="cta-subtitle">/utente/mese</div>
-                                    <ul class="cta-features">
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-users"></i>
-                                            3 o più utenti
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-folder"></i>
-                                            Tutto lo spzio di qui ha bisogno il tuo team
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-share-nodes"></i>
-                                            Sofisticate funzioni di controllo e per tenere al sicuro tutti i file del
-                                            tuo team
-                                        </li>
-                                    </ul>
-                                    <a class="blue-btn" href=" #">Prova gratis per 30 giorni</a>
-                                    <div>
-                                        oppure <a href="#">acquista ora</a>
-                                    </div>
-                                    <hr>
-                                    <div class="cta-price">Punti salienti del piano</div>
-                                    <ul class="cta-features">
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Nessun limite di spazio per i file
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Cartella ofline su dispositivi mobili
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Risparmio del 50% rispetto alle iscrizioni singole
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Possibilità di inserire nuovi membri del team
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Gestione dei permessi in base ai ruoli
-                                        </li>
-                                        <ul></ul>
-                                </div>
+                                <hr>
+                                <div class="cta-price">Punti salienti del piano</div>
+                                <ul class="cta-features">
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Nessun limite di spazio per i file
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Cartella ofline su dispositivi mobili
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Risparmio del 50% rispetto alle iscrizioni singole
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Possibilità di inserire nuovi membri del team
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Gestione dei permessi in base ai ruoli
+                                    </li>
+                                    <ul></ul>
                             </div>
-                            <div class="col cta-col">
-                                <div class="cta-header">
-                                    <i class="fa-solid fa-building"></i>
-                                    Azienda
-                                </div>
-                                <div class="cta-content">
-                                    <h3 class="cta-title">Enterprise</h3>
-                                    <div class="cta-price">Contattaci</div>
-                                    <div class="cta-subtitle">-</div>
-                                    <ul class="cta-features">
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-user"></i>
-                                            10 o più utenti
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-folder"></i>
-                                            Soluzioni personalizzabili per la tua azienda
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-share-nodes"></i>
-                                            Assistenza personalizzata per aiutare gli amministratori in una gestione su
-                                            larga scala
-                                        </li>
-                                    </ul>
-                                    <a class="blue-btn" href=" #">Prova gratis per 30 giorni</a>
-                                    <div>
-                                        oppure <a href="#">acquista ora</a>
-                                    </div>
-                                    <hr>
-                                    <div class="cta-price">Punti salienti del piano</div>
-                                    <ul class="cta-features">
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Cartella ofline su dispositivi mobili
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Servizio assistenza 24/h
-                                        </li>
-                                        <li class="cta-feature">
-                                            <i class="fa-solid fa-check"></i>
-                                            Possibilità di personalizzazione totale
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-
                         </div>
+                    </div>
+                    <div class="col col-3">
+                        <div class="cta-col">
+                            <div class="cta-header">
+                                <i class="fa-solid fa-users"></i>
+                                Team
+                            </div>
+                            <div class="cta-content">
+                                <h3 class="cta-title">Advanced</h3>
+                                <div class="cta-price">€ 18.00</div>
+                                <div class="cta-subtitle">/utente/mese</div>
+                                <ul class="cta-features">
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-users"></i>
+                                        3 o più utenti
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-folder"></i>
+                                        Tutto lo spzio di qui ha bisogno il tuo team
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        Sofisticate funzioni di controllo e per tenere al sicuro tutti i file
+                                        del
+                                        tuo team
+                                    </li>
+                                </ul>
+                                <a class="blue-btn" href=" #">Prova gratis per 30 giorni</a>
+                                <div>
+                                    oppure <a href="#">acquista ora</a>
+                                </div>
+                                <hr>
+                                <div class="cta-price">Punti salienti del piano</div>
+                                <ul class="cta-features">
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Nessun limite di spazio per i file
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Cartella ofline su dispositivi mobili
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Risparmio del 50% rispetto alle iscrizioni singole
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Possibilità di inserire nuovi membri del team
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Gestione dei permessi in base ai ruoli
+                                    </li>
+                                    <ul></ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-3">
                         <div class="cta-col">
                             <div class="cta-header">
                                 <i class="fa-solid fa-building"></i>
-                                Singolo
+                                Azienda
                             </div>
-                            <div class="cta-content d-flex">
-                                <div class="col-l">
-                                    <h3 class="cta-title">Enterprise</h3>
-                                    <div class="cta-price">Contatta l'ufficio vendite per i prezzi</div>
-                                    <div class="cta-subtitle">Soluzioni personalizzate e supporto su misura per
-                                        aiutare i professionisti IT nella gestione su qualsiasi scala </div>
+                            <div class="cta-content">
+                                <h3 class="cta-title">Enterprise</h3>
+                                <div class="cta-price">Contattaci</div>
+                                <div class="cta-subtitle">-</div>
+                                <ul class="cta-features">
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-user"></i>
+                                        10 o più utenti
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-folder"></i>
+                                        Soluzioni personalizzabili per la tua azienda
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-share-nodes"></i>
+                                        Assistenza personalizzata per aiutare gli amministratori in una gestione
+                                        su
+                                        larga scala
+                                    </li>
+                                </ul>
+                                <a class="blue-btn" href=" #">Prova gratis per 30 giorni</a>
+                                <div>
+                                    oppure <a href="#">acquista ora</a>
                                 </div>
-                                <div class="">
-                                    <a class="blue-btn" href="#">Contatta l'ufficio vendite</a>
-                                </div>
-
+                                <hr>
+                                <div class="cta-price">Punti salienti del piano</div>
+                                <ul class="cta-features">
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Cartella ofline su dispositivi mobili
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Servizio assistenza 24/h
+                                    </li>
+                                    <li class="cta-feature">
+                                        <i class="fa-solid fa-check"></i>
+                                        Possibilità di personalizzazione totale
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="cta-col">
+                        <div class="cta-header">
+                            <i class="fa-solid fa-building"></i>
+                            Team
+                        </div>
+                        <div class="d-flex">
+                            <div class="row gap-2">
+                                <div class="col col-wide">
+                                    <div class="cta-content">
+                                        <h3 class="cta-title">Enterprise</h3>
+                                        <div class="cta-price">Contatta l'ufficio vendite per i prezzi</div>
+                                        <div class="cta-subtitle">Soluzioni personalizzate e supporto su misura per
+                                            aiutare i professionisti IT nella gestione su qualsiasi scala </div>
+                                    </div>
+                                </div>
+                                <div class="col col-small">
+                                    <div class="cta-content">
+                                        <a class="blue-btn" href="#">Contatta l'ufficio vendite</a></div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </section>
         <section class="py-60">
-            <div class="container d-flex">
-                <div class="partner-img">
-                    <img src="img/partner.png" alt="Due uomini che parlano">
-                </div>
-                <div class="partner-description">
-                    <h3 class="pb-30">Entra in contatto con un partner Dropbox</h3>
-                    <p class="pb-30">Trova un poartner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i servizi
-                        necessari per
-                        raggiungere i tuoi obbiettivi aziendali, tra qui implementazione, integrazione, gestione e
-                        supporto continui.</p>
-                    <a class="white-btn" href="#">Trova un partner</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col col-wide-60">
+                        <div class="partner-img">
+                            <img src="img/partner.png" alt="Due uomini che parlano">
+                        </div>
+                    </div>
+                    <div class="col col-small-40">
+                        <div class="partner-description">
+                            <h3 class="pb-30">Entra in contatto con un partner Dropbox</h3>
+                            <p class="pb-30">Trova un poartner Dropbox e HelloSign di fiducia. Ottieni le soluzioni e i
+                                servizi
+                                necessari per
+                                raggiungere i tuoi obbiettivi aziendali, tra qui implementazione, integrazione, gestione
+                                e
+                                supporto continui.</p>
+                            <a class="white-btn" href="#">Trova un partner</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
