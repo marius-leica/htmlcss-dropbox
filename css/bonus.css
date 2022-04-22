@@ -1,0 +1,17 @@
+nav a:hover {
+  text-decoration: underline;
+}
+
+.blue-btn:hover {
+  background-color: var(--color-light-blue);
+  text-decoration: none;
+}
+
+.outline-btn:hover,
+.white-btn:hover {
+  color: var(--color-blue);
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
