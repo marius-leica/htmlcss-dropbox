@@ -227,7 +227,6 @@ header {
 
 nav {
   background-color: white;
-  padding: 20px;
 }
 
 .logo {
@@ -247,7 +246,7 @@ nav .row .col {
 nav a {
   text-decoration: none;
   color: unset;
-  padding: 10px 15px;
+  padding: 25px 15px;
 }
 
 .blue-btn {
@@ -260,7 +259,7 @@ nav a {
 /* Main */
 
 .jumbotron {
-  margin-top: 88px;
+  margin-top: 80px;
 }
 
 .arrow-down {
