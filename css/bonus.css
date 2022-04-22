@@ -1,19 +1,23 @@
 nav a:hover {
   border-bottom: 1px solid;
+  transition: all 0.3s ease-in-out;
 }
 
 .blue-btn:hover {
   background-color: var(--color-light-blue);
   text-decoration: none;
+  transition: all 0.3s ease-in-out;
 }
 
 .outline-btn:hover,
 .white-btn:hover {
   color: var(--color-blue);
+  transition: all 0.3s ease-in-out;
 }
 
 footer a:hover {
   text-decoration: underline;
+  transition: all 0.3s ease-in-out;
 }
 
 .logo {
@@ -181,5 +185,19 @@ label {
 
 .accordion .li-content:hover .fa-solid {
   transform: rotate(180deg);
+  transition: all 0.3s ease-in-out;
+}
+
+.big-square.first {
+  /* display: none; */
+  /* z-index: 99; */
+}
+
+.square.bg-green:hover .big-square.first {
+  display: block;
+}
+
+.square:hover {
+  border: 10px solid rgba(255, 255, 255, 0.182);
   transition: all 0.3s ease-in-out;
 }
