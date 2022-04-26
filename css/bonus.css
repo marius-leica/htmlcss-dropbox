@@ -188,11 +188,6 @@ label {
   transition: all 0.3s ease-in-out;
 }
 
-.big-square.first {
-  /* display: none; */
-  /* z-index: 99; */
-}
-
 .square.bg-green:hover .big-square.first {
   display: block;
 }
@@ -200,4 +195,131 @@ label {
 .square:hover {
   border: 10px solid rgba(255, 255, 255, 0.182);
   transition: all 0.3s ease-in-out;
+}
+
+/* GRID */
+
+.item-1 {
+  grid-column: 1 / 1;
+  grid-row: 1 / 2;
+}
+.item-2 {
+  grid-column: 2 / 2;
+  grid-row: 1 / 2;
+}
+
+.item-3 {
+  grid-column: 1 / 1;
+  grid-row: 2 / 2;
+}
+
+.item-4 {
+  grid-column: 2 / 2;
+  grid-row: 2 / 2;
+}
+
+.item-xl {
+  grid-column: 3 / 3;
+  grid-row: 1 / 3;
+}
+
+.item-5 {
+  grid-column: 4 / 4;
+  grid-row: 1 / 2;
+}
+.item-6 {
+  grid-column: 5 / 5;
+  grid-row: 1 / 2;
+}
+
+.item-7 {
+  grid-column: 4 / 4;
+  grid-row: 2 / 2;
+}
+
+.item-8 {
+  grid-column: 5 / 5;
+  grid-row: 2 / 2;
+}
+
+.container-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 2fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.square {
+  width: calc(100vw / 6);
+}
+
+.big-square-1,
+.big-square-2,
+.big-square-3,
+.big-square-4,
+.big-square-5,
+.big-square-6,
+.big-square-7,
+.big-square-8 {
+  display: none;
+  padding: 40px;
+}
+
+.item-1:hover ~ .big-square-default {
+  display: block;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+
+.item-2:hover ~ .big-square-2 {
+  display: block;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+.item-3:hover ~ .big-square-3 {
+  display: block;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+.item-4:hover ~ .big-square-4 {
+  display: block;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+.item-5:hover ~ .big-square-5 {
+  display: block;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+.item-6:hover ~ .big-square-6 {
+  display: block;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+.item-7:hover ~ .big-square-7 {
+  display: block;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+.item-8:hover ~ .big-square-8 {
+  display: block;
+  z-index: 3;
+  transition: all 0.3s ease-in-out;
+  overflow: auto;
+}
+
+.item-xl {
+  overflow: auto;
+  height: calc(100vw / 3);
+  transition: all 0.3s ease-in-out;
+}
+
+.big-square-default {
+  padding: 40px;
 }
